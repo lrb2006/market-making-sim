@@ -1,0 +1,415 @@
+{
+  "params": {
+    "base": {
+      "s0": 100.0,
+      "sigma": 2.0,
+      "T": 1.0,
+      "n_steps": 200,
+      "A": 140.0,
+      "k": 1.5,
+      "jump_prob": 0.0,
+      "jump_size": 0.0,
+      "informed_size": 0
+    },
+    "toxic": {
+      "s0": 100.0,
+      "sigma": 2.0,
+      "T": 1.0,
+      "n_steps": 200,
+      "A": 140.0,
+      "k": 1.5,
+      "jump_prob": 0.05,
+      "jump_size": 1.5,
+      "informed_size": 3
+    },
+    "n_paths": 2000
+  },
+  "replication": {
+    "0.01": {
+      "inventory": {
+        "mean_pnl": 68.741,
+        "std_pnl": 9.251,
+        "pnl_per_risk": 7.431,
+        "p5_pnl": 54.1,
+        "mean_spread_pnl": 68.501,
+        "mean_inventory_pnl": 0.24,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 5.345,
+        "mean_max_abs_inventory": 7.247,
+        "mean_fills": 102.353,
+        "avg_quoted_spread": 1.349
+      },
+      "symmetric": {
+        "mean_pnl": 69.119,
+        "std_pnl": 13.655,
+        "pnl_per_risk": 5.062,
+        "p5_pnl": 47.38,
+        "mean_spread_pnl": 68.71,
+        "mean_inventory_pnl": 0.409,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 8.803,
+        "mean_max_abs_inventory": 10.416,
+        "mean_fills": 101.871,
+        "avg_quoted_spread": 1.349
+      }
+    },
+    "0.1": {
+      "inventory": {
+        "mean_pnl": 65.164,
+        "std_pnl": 6.85,
+        "pnl_per_risk": 9.513,
+        "p5_pnl": 54.158,
+        "mean_spread_pnl": 65.013,
+        "mean_inventory_pnl": 0.151,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 3.055,
+        "mean_max_abs_inventory": 4.072,
+        "mean_fills": 97.111,
+        "avg_quoted_spread": 1.492
+      },
+      "symmetric": {
+        "mean_pnl": 68.465,
+        "std_pnl": 13.429,
+        "pnl_per_risk": 5.098,
+        "p5_pnl": 47.214,
+        "mean_spread_pnl": 68.116,
+        "mean_inventory_pnl": 0.349,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 8.51,
+        "mean_max_abs_inventory": 10.076,
+        "mean_fills": 91.9,
+        "avg_quoted_spread": 1.492
+      }
+    },
+    "0.5": {
+      "inventory": {
+        "mean_pnl": 48.652,
+        "std_pnl": 6.012,
+        "pnl_per_risk": 8.092,
+        "p5_pnl": 39.482,
+        "mean_spread_pnl": 48.561,
+        "mean_inventory_pnl": 0.091,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 2.007,
+        "mean_max_abs_inventory": 2.623,
+        "mean_fills": 78.118,
+        "avg_quoted_spread": 2.156
+      },
+      "symmetric": {
+        "mean_pnl": 58.594,
+        "std_pnl": 11.522,
+        "pnl_per_risk": 5.085,
+        "p5_pnl": 40.0,
+        "mean_spread_pnl": 58.357,
+        "mean_inventory_pnl": 0.237,
+        "mean_informed_loss": 0.0,
+        "std_final_inventory": 7.173,
+        "mean_max_abs_inventory": 8.456,
+        "mean_fills": 60.876,
+        "avg_quoted_spread": 2.156
+      }
+    }
+  },
+  "adverse_selection": {
+    "no_informed_flow": {
+      "mean_pnl": 65.164,
+      "std_pnl": 6.85,
+      "pnl_per_risk": 9.513,
+      "p5_pnl": 54.158,
+      "mean_spread_pnl": 65.013,
+      "mean_inventory_pnl": 0.151,
+      "mean_informed_loss": 0.0,
+      "std_final_inventory": 3.055,
+      "mean_max_abs_inventory": 4.072,
+      "mean_fills": 97.111,
+      "avg_quoted_spread": 1.492
+    },
+    "jumps_only": {
+      "mean_pnl": 65.255,
+      "std_pnl": 9.586,
+      "pnl_per_risk": 6.807,
+      "p5_pnl": 49.587,
+      "mean_spread_pnl": 65.013,
+      "mean_inventory_pnl": 0.243,
+      "mean_informed_loss": 0.0,
+      "std_final_inventory": 3.055,
+      "mean_max_abs_inventory": 4.072,
+      "mean_fills": 97.111,
+      "avg_quoted_spread": 1.492
+    },
+    "jumps_only_symmetric": {
+      "mean_pnl": 68.695,
+      "std_pnl": 30.179,
+      "pnl_per_risk": 2.276,
+      "p5_pnl": 20.98,
+      "mean_spread_pnl": 68.116,
+      "mean_inventory_pnl": 0.579,
+      "mean_informed_loss": 0.0,
+      "std_final_inventory": 8.51,
+      "mean_max_abs_inventory": 10.076,
+      "mean_fills": 91.9,
+      "avg_quoted_spread": 1.492
+    },
+    "informed_flow": {
+      "mean_pnl": 38.155,
+      "std_pnl": 13.713,
+      "pnl_per_risk": 2.782,
+      "p5_pnl": 14.092,
+      "mean_spread_pnl": 81.877,
+      "mean_inventory_pnl": -43.722,
+      "mean_informed_loss": -22.954,
+      "std_final_inventory": 4.246,
+      "mean_max_abs_inventory": 6.207,
+      "mean_fills": 131.933,
+      "avg_quoted_spread": 1.492
+    },
+    "informed_flow_symmetric": {
+      "mean_pnl": 45.449,
+      "std_pnl": 45.113,
+      "pnl_per_risk": 1.007,
+      "p5_pnl": -37.318,
+      "mean_spread_pnl": 90.605,
+      "mean_inventory_pnl": -45.156,
+      "mean_informed_loss": -22.75,
+      "std_final_inventory": 12.46,
+      "mean_max_abs_inventory": 14.98,
+      "mean_fills": 122.059,
+      "avg_quoted_spread": 1.492
+    }
+  },
+  "buffer_sweep_train": {
+    "1.0": {
+      "buffers": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25,
+        1.375,
+        1.5
+      ],
+      "mean_pnl": [
+        53.988,
+        56.547,
+        57.935,
+        56.251,
+        53.342,
+        49.433,
+        44.997,
+        40.721,
+        36.403,
+        32.344,
+        28.712,
+        25.141,
+        22.076
+      ],
+      "pnl_per_risk": [
+        5.764,
+        6.204,
+        6.421,
+        6.434,
+        5.884,
+        5.454,
+        4.891,
+        4.415,
+        4.036,
+        3.628,
+        3.248,
+        2.957,
+        2.663
+      ]
+    },
+    "1.5": {
+      "buffers": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25,
+        1.375,
+        1.5
+      ],
+      "mean_pnl": [
+        38.155,
+        41.521,
+        43.509,
+        44.647,
+        44.548,
+        43.513,
+        42.08,
+        39.289,
+        36.047,
+        32.101,
+        28.624,
+        25.087,
+        22.041
+      ],
+      "pnl_per_risk": [
+        2.782,
+        3.148,
+        3.408,
+        3.568,
+        3.653,
+        3.8,
+        3.859,
+        3.888,
+        3.648,
+        3.258,
+        2.929,
+        2.647,
+        2.379
+      ]
+    },
+    "2.0": {
+      "buffers": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25,
+        1.375,
+        1.5
+      ],
+      "mean_pnl": [
+        22.911,
+        26.237,
+        28.307,
+        29.386,
+        30.025,
+        30.083,
+        29.655,
+        29.26,
+        28.5,
+        27.191,
+        25.863,
+        24.001,
+        21.967
+      ],
+      "pnl_per_risk": [
+        1.226,
+        1.454,
+        1.618,
+        1.713,
+        1.792,
+        1.838,
+        1.836,
+        1.852,
+        1.896,
+        1.885,
+        2.017,
+        2.172,
+        2.158
+      ]
+    }
+  },
+  "buffer_out_of_sample": {
+    "1.0": {
+      "chosen_buffer": 0.25,
+      "test_no_buffer": {
+        "mean_pnl": 53.787,
+        "std_pnl": 9.406,
+        "pnl_per_risk": 5.718,
+        "p5_pnl": 37.58,
+        "mean_spread_pnl": 78.274,
+        "mean_inventory_pnl": -24.487,
+        "mean_informed_loss": -8.672,
+        "std_final_inventory": 4.236,
+        "mean_max_abs_inventory": 5.8,
+        "mean_fills": 124.818,
+        "avg_quoted_spread": 1.492
+      },
+      "test_with_buffer": {
+        "mean_pnl": 58.084,
+        "std_pnl": 8.985,
+        "pnl_per_risk": 6.465,
+        "p5_pnl": 43.544,
+        "mean_spread_pnl": 73.054,
+        "mean_inventory_pnl": -14.97,
+        "mean_informed_loss": -3.0,
+        "std_final_inventory": 3.852,
+        "mean_max_abs_inventory": 4.863,
+        "mean_fills": 82.868,
+        "avg_quoted_spread": 1.992
+      },
+      "pnl_improvement": 0.08
+    },
+    "1.5": {
+      "chosen_buffer": 0.375,
+      "test_no_buffer": {
+        "mean_pnl": 37.972,
+        "std_pnl": 13.892,
+        "pnl_per_risk": 2.733,
+        "p5_pnl": 14.15,
+        "mean_spread_pnl": 81.667,
+        "mean_inventory_pnl": -43.694,
+        "mean_informed_loss": -22.65,
+        "std_final_inventory": 4.262,
+        "mean_max_abs_inventory": 6.231,
+        "mean_fills": 131.389,
+        "avg_quoted_spread": 1.492
+      },
+      "test_with_buffer": {
+        "mean_pnl": 44.454,
+        "std_pnl": 12.646,
+        "pnl_per_risk": 3.515,
+        "p5_pnl": 21.817,
+        "mean_spread_pnl": 83.233,
+        "mean_inventory_pnl": -38.779,
+        "mean_informed_loss": -12.141,
+        "std_final_inventory": 4.531,
+        "mean_max_abs_inventory": 6.026,
+        "mean_fills": 85.01,
+        "avg_quoted_spread": 2.242
+      },
+      "pnl_improvement": 0.171
+    },
+    "2.0": {
+      "chosen_buffer": 0.625,
+      "test_no_buffer": {
+        "mean_pnl": 22.744,
+        "std_pnl": 18.973,
+        "pnl_per_risk": 1.199,
+        "p5_pnl": -11.085,
+        "mean_spread_pnl": 82.21,
+        "mean_inventory_pnl": -59.467,
+        "mean_informed_loss": -37.43,
+        "std_final_inventory": 4.262,
+        "mean_max_abs_inventory": 6.337,
+        "mean_fills": 132.297,
+        "avg_quoted_spread": 1.492
+      },
+      "test_with_buffer": {
+        "mean_pnl": 29.4,
+        "std_pnl": 17.426,
+        "pnl_per_risk": 1.687,
+        "p5_pnl": -2.265,
+        "mean_spread_pnl": 85.442,
+        "mean_inventory_pnl": -56.043,
+        "mean_informed_loss": -19.249,
+        "std_final_inventory": 4.734,
+        "mean_max_abs_inventory": 6.387,
+        "mean_fills": 70.465,
+        "avg_quoted_spread": 2.742
+      },
+      "pnl_improvement": 0.293
+    }
+  }
+}
