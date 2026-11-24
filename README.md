@@ -131,4 +131,4 @@ This implementation uses at most one noise fill per side and time step, with a c
 
 The 8-29% buffer gains are on fresh simulated seeds under the same assumed model. They are not out-of-sample market-data returns. A single train/test seed pair does not quantify all Monte Carlo uncertainty.
 
-Developed with AI coding assistance. See `WALKTHROUGH_CN.md` before using the project in interviews.
+Developed with AI coding assistance. See `WALKTHROUGH.md` before using the project in interviews.
